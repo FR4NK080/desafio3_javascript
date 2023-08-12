@@ -3,7 +3,6 @@ const padre = document.querySelector("#padre");
 padre.addEventListener("click",(e)=>{
     if((e.target.classList.contains('dimensiones')) === true){
     e.target.classList.toggle("black");
-    console.log("aqui estoy");
 }})
 const container = document.querySelector(".container");
 const tecla = document.querySelector("#key");

@@ -27,6 +27,8 @@ función pintar. El color debe ser verde (green) por defecto, al hacer clic en e
 párrafo se debe pasar amarillo como color. */
 
 const ele = document.getElementById("ele1")
-ele.addEventListener("click", function(color = "green"){
-    ele.style.backgroundColor = color 
+ele.addEventListener("click", function(a='green'){
+    a = "yellow"
+    ele.style.backgroundColor = a;
 });
+
