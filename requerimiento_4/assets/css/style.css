@@ -3,3 +3,17 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
 }
+.black{
+    background-color: black !important;
+    
+}
+.dimensiones{
+    height: 200px;
+    width: 200px;
+}
+.white{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid black;
+}

@@ -1,26 +1,23 @@
 /*4.2*/
-const azul = document.getElementById("azul");
-const rojo = document.getElementById("rojo");
-const verde = document.getElementById("verde");
-const amarillo = document.getElementById("amarillo");
-
-/*4.3*/ 
+const padre = document.querySelector("#padre");
+padre.addEventListener("click",(e)=>{
+    if((e.target.classList.contains('dimensiones')) === true){
+    e.target.classList.toggle("black");
+    console.log("aqui estoy");
+}})
+const container = document.querySelector(".container");
 const tecla = document.querySelector("#key");
 document.body.addEventListener("keydown",(k)=>{
     if(k.key == "a"){
-        tecla.style.backgroundColor = "pink"
+        tecla.style.backgroundColor = "pink";
     }
     else if (k.key == 's'){
-        tecla.style.backgroundColor = "orange"
+        tecla.style.backgroundColor = "orange";
     }
     else if (k.key =='d'){
-        tecla.style.backgroundColor = "lightblue"
+        tecla.style.backgroundColor = "lightblue";
     }
-})
-/*4.4*/
-const container = document.querySelector(".container");
-document.body.addEventListener("keydown",(k)=>{
-    if(k.key == "q"){
+    else if(k.key == "q"){
         const nuevoP = document.createElement("div");
         container.appendChild(nuevoP);
         nuevoP.style.backgroundColor = "purple";
@@ -41,4 +38,6 @@ document.body.addEventListener("keydown",(k)=>{
         nuevoB.style.height = "200px";
         nuevoB.style.width = "200px";
     }
-})
+    else{
+        tecla.style.backgroundColor = "white";
+}})
